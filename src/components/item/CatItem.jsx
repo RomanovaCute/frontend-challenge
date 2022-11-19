@@ -1,5 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
-import { Image, Item } from "./styles"
+import { Image, Item, EmptyLike } from "./styles"
+import  emptyLike  from '../../assets/images/favEmpty.png'
+import filledLike from '../../assets/images/favFilled.png'
+
 
 export const CatItem = ({img, cat}) => {
     const dispatch = useDispatch()
@@ -7,6 +10,7 @@ export const CatItem = ({img, cat}) => {
     return(
         <Item>
             <Image src={img}></Image>
+            <EmptyLike className="like" src={emptyLike}></EmptyLike>
         </Item>
     )
 }
