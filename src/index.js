@@ -4,8 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
+import { Provider } from "react-redux"
+import { setupStore } from './store';
 
 const GlobalStyles = createGlobalStyle`
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 46px;
+        padding: 48px 62px;
+    }
+
     body{
         margin: 0;
         font-family: sans-serif;
@@ -23,12 +33,14 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
     }
 `
-
+const store = setupStore()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <StrictMode>
         <GlobalStyles/>
-        <App/>
+        <Provider store={store}>
+            <App/>
+        </Provider>
     </StrictMode>
 );
 

@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const NavContainer = styled.div`
+    position: sticky;
+    top: 0;
     height: 64px;
     display: flex;
     justify-content: flex-start;
