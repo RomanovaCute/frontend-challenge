@@ -9,7 +9,7 @@ export const Item = styled.div`
 
     &:hover{
         scale: 1.07;
-        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        
 
         .like{
            opacity: 1;
@@ -23,10 +23,24 @@ export const Image = styled.img`
     height: 225px;
 `
 
+export const LikeContainer = styled.div`
+    height: 94px;
+    position: absolute;
+    justify-content: flex-end;
+    align-item: center;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+
+    &:hover{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 58.85%);
+    }
+`
+
 export const EmptyLike = styled.img`
     position: absolute;
-    top: 170px;
-    left: 170px;
+    top: 0;
+    padding: 28px;
     opacity: 0;
     transition: 0.15s ease-in;
     cursor: pointer;

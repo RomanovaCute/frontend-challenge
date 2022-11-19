@@ -14,6 +14,11 @@ const GlobalStyles = createGlobalStyle`
         justify-content: center;
         gap: 46px;
         padding: 48px 62px;
+
+        @media (max-width: 768px) {
+            position: absolute;
+            padding: 20px;
+        }
     }
 
     body{

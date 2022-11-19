@@ -10,6 +10,15 @@ export const NavContainer = styled.div`
     padding-left: 60px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        width: 100vw;
+        font-size: 10px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
 `
 export const Tabs = styled.div`
     height: 100%;
