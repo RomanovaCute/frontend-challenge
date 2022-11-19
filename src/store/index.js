@@ -1,10 +1,10 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import catsSlice from "./reducers/cats-slice";
-// import favCatSlice  from "./reducers/favCatSlice";
+import favoriteSlice  from "./reducers/favorite-slice";
 
 const rootReducer = combineReducers({
 	catsSlice,
-	// favCatSlice,
+	favoriteSlice,
 })
 export const setupStore = () => {
 	return configureStore({
