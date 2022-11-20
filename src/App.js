@@ -16,7 +16,7 @@ function App() {
         <div className='App'>
           <Routes>
             <Route path='/' element={<Layout />}>
-              <Route path='/' element={<Homepage />} />
+              <Route path='frontend-challenge' element={<Homepage />} />
               <Route path='favorite' element={<Favorite/>} />
               <Route path='*' element={<NotFound/>}/>
             </Route>
