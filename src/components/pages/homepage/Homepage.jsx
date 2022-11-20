@@ -3,6 +3,7 @@ import { CatItem } from '../../item/CatItem'
 import { useEffect } from 'react'
 import { loadCats } from '../../../store/reducers/action-creator'
 import { Preloder } from '../../progress/Loader'
+import { LoadMore } from '../../button/LoadMore'
 
 export const Homepage = () => {
     const { cats, isLoading } = useSelector((state) => state.catsSlice)
@@ -22,6 +23,7 @@ export const Homepage = () => {
                     { cats.map((item) => (
                         <CatItem cat={item} key={item.id} img={item.url}/>
                     ))}
+                    <LoadMore/>
                 </>
             }
         </>

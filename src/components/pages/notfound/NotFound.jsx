@@ -1,5 +1,5 @@
 export const NotFound = () => {
     return(
-        <div>Страница не найдена</div>
+        <div>Страница не найдена!</div>
     )
 }
